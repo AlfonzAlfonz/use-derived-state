@@ -1,0 +1,27 @@
+{
+  "name": "use-derived-state",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "author": "Denis Homolik",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn tsc && yarn rollup -c",
+    "prepare": "yarn build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.1.1",
+    "@types/react": "^17.0.1",
+    "rollup": "^2.38.5",
+    "tslib": "^2.1.0",
+    "typescript": "^4.1.5"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1"
+  },
+  "files": [
+    "dist",
+    "src"
+  ]
+}
